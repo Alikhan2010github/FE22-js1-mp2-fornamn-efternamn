@@ -36,14 +36,18 @@ stenbtn.addEventListener('click', function () {
     poangpc++;
     pcPng.innerText = `Pc points : ${poangpc}`;
   }
-  if (poanguser == 3) {
-    alert(`${input.value} Win!`)
-    location.reload(true)
-  }
-  if (poangpc == 3) {
-    alert('Pc Win!');
-    location.reload(true);
-  }
+  setTimeout(function () {
+    if (poanguser == 3) {
+      alert(`${input.value} Win!`)
+      location.reload(true)
+    }
+    if (poangpc == 3) {
+      alert('Pc Win!');
+      location.reload(true);
+    }
+
+  }, 30)
+
 })
 
 saxbtn.addEventListener('click', function () {
@@ -62,14 +66,18 @@ saxbtn.addEventListener('click', function () {
     poanguser++;
     usrPng.innerText = `Your points: ${poanguser}`;
   }
-  if (poanguser == 3) {
-    alert(`${input.value} Win!`)
-    location.reload(true)
-  }
-  if (poangpc == 3) {
-    alert('Pc Win!')
-    location.reload(true)
-  }
+
+  setTimeout(function () {
+    if (poanguser == 3) {
+      alert(`${input.value} Win!`)
+      location.reload(true)
+    }
+    if (poangpc == 3) {
+      alert('Pc Win!')
+      location.reload(true)
+    }
+  }, 30)
+
 })
 
 papperbtn.addEventListener('click', function () {
@@ -88,13 +96,22 @@ papperbtn.addEventListener('click', function () {
   else {
     pcVal.innerText = ("Pc choosed :Paper");
   }
-  if (poanguser == 3) {
-    alert(`${input.value} Win!`)
-    location.reload(true)
-  }
-  if (poangpc == 3) {
-    alert('Pc Win!')
-    location.reload(true)
-  }
+  setTimeout(function () {
+    if (poanguser == 3) {
+      alert(`${input.value} Win!`)
+      location.reload(true)
+    }
+    if (poangpc == 3) {
+      alert('Pc Win!')
+      location.reload(true)
+    }
+  }, 30)
 })
 
+// <!-- setTimeout( reset, 1000)
+// function reset(){
+//   alert('Pc Win!')
+// }
+
+// location.reload(true)
+// // } -->
